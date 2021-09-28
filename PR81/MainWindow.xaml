@@ -1,0 +1,22 @@
+﻿<Window x:Class="PR81.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PR81"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,-8,-21" RenderTransformOrigin="0.334,0.334">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="inNum" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" Text="Text" VerticalAlignment="Top" Width="189" Margin="231,66,0,0"/>
+        <Button Content="Enter" HorizontalAlignment="Left" Margin="345,144,0,0" VerticalAlignment="Top" Width="75" Height="68" Click="Button_Click"/>
+        <RadioButton Content="BIN" HorizontalAlignment="Left" Margin="231,148,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <RadioButton Content="OCT" HorizontalAlignment="Left" Margin="231,168,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <RadioButton Content="HEX" HorizontalAlignment="Left" Margin="231,188,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <TextBlock x:Name="outNum" HorizontalAlignment="Left" Margin="231,111,0,0" TextWrapping="Wrap" Text="Результат" VerticalAlignment="Top" Height="28" Width="189"/>
+
+    </Grid>
+</Window>
